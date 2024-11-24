@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #2e2e31;
+    color: #333;
+  }
+  
+  h1,
+  h2 {
+    text-align: center;
+    color: #f2f2f2;
+  }
+  
+
+  #statisticsContainer,
+  #formContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: rgba(211, 211, 211, 0.8);
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: underline;
+  }
+  
+  .statisticsColumn,
+  form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form label,
+  form input,
+  form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    width: auto;
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #2c3e50;
+  }
+  
+  .tableContainer {
+    overflow: scroll;
+    margin-bottom: 20px;
+    max-height: 15cm;
+  }
+  
+  table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th,
+  table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background: #101214f0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  
+  table td button {
+    padding: 5px 10px;
+    background: #1c3b419c;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  table td button:hover {
+    background: #c0392b;
+  }
+  
+  table td {
+    text-align: center;
+  }
+  
+  #studentsTable tbody tr:hover {
+    background-color: lightyellow;
+  }
+  
+  
+  .note-red-strong {
+    background-color: #ff4c4c;
+    color: black;
+  }
+  
+  .note-red {
+    background-color: #ff7f7f;
+    color: black;
+  }
+  
+  .note-light-red {
+    background-color: #ffb3b3;
+    color: black;
+  }
+  
+  .note-yellow {
+    background-color: #fff275; 
+    color: black;
+  }
+  
+  .note-light-green {
+    background-color: #a7ff83; 
+    color: black;
+  }
+  
+  .note-green-strong {
+    background-color: #28a745; 
+    color: black;
+  }
+  

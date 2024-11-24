@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Estudiantes</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <section class="styledSection">
+    <h2>Resumen Estadístico</h2>
+    <div id="statisticsContainer">
+      <div class="statisticsColumn">
+        <p id="aprobados">Estudiantes Aprobados: 0</p>
+        <p id="reprobados">Estudiantes Reprobados: 0</p>
+        <p id="sinNotas">Estudiantes Sin Notas: 0</p>
+      </div>
+      <div class="statisticsColumn">
+        <p id="averageNote">Promedio General: -</p>
+        <p id="highestNote">Nota Más Alta: -</p>
+        <p id="lowestNote">Nota Más Baja: -</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="styledSection">
+    <h2>Gestión de Estudiantes y Notas</h2>
+    <div id="formContainer">
+      <form id="addStudentForm">
+        <h3>Creación de Estudiante</h3>
+        <label for="cod">Código:</label>
+        <input type="text" id="cod" name="cod" required /><br /><br />
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <button type="submit">Agregar Estudiante</button>
+      </form>
+
+      <form id="addNoteForm">
+        <h3>Adición de Nota</h3>
+        <label for="codEstudiante">Código del Estudiante:</label>
+        <input type="text" id="codEstudiante" name="codEstudiante" required /><br /><br />
+        <label for="actividad">Actividad:</label>
+        <input type="text" id="actividad" name="actividad" required /><br /><br />
+        <label for="nota">Nota:</label>
+        <input type="number" step="0.01" id="nota" name="nota" required /><br /><br />
+        <button type="submit">Añadir Nota</button>
+      </form>
+    </div>
+  </section>
+
+  <h2>Estudiantes</h2>
+  <div class="tableContainer">
+    <table border="1" id="studentsTable">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nombres</th>
+          <th>Email</th>
+          <th>Nota Definitiva</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>Notas</h2>
+  <div class="tableContainer">
+    <table border="1" id="notesTable">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Estudiante</th>
+          <th>Actividad</th>
+          <th>Nota</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="js/script.js"></script>
+  </body>
+</html>

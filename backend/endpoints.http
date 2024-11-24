@@ -1,0 +1,41 @@
+### Consultar todos los estudiantes
+GET http://127.0.0.1:8000/api/app/estudiante/
+
+### Consultar un solo estudiante con notas
+GET http://127.0.0.1:8000/api/app/estudiante/5678
+
+### Eliminar estudiante
+
+DELETE http://127.0.0.1:8000/api/app/estudiante/1234
+
+### Ingresar un nuevo estudiante
+POST http://127.0.0.1:8000/api/app/estudiante/
+Content-Type: 'application/json'
+
+{
+   "cod": "10556",
+   "nombres": "andres",
+   "email": "andres@test.com"
+}
+
+### Actualizar estudiante
+PUT http://127.0.0.1:8000/api/app/estudiante/1055
+Content-Type: 'application/json'
+
+{
+   "nombres": "Marcos",
+   "email": "marcos@test.com"
+}
+
+### Crear registro de notas
+POST http://127.0.0.1:8000/api/app/nota/
+Content-Type: 'application/json'
+
+{
+  "actividad": "Segunda nota",
+  "nota": "3",
+  "codEstudiante": "1234"
+}
+
+### imprimir todos los registros de notas
+GET http://127.0.0.1:8000/api/app/nota/
